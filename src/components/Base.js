@@ -1,15 +1,15 @@
 import React from 'react'
-import ZJBlogo from './ZJBlogo'
+import Nav from '../nav/Nav'
+import SwitchBoard from './SwitchBoard'
+const meta = require('../content/main.json')
 
 export default function Base() {
     return (
         <div className="base-frame">
-            <div className="title-frame">
-                <strong>Happy Building!!</strong>
-            </div>
-            <div className="logo-holder">
-                <ZJBlogo/>
-            </div>
+            <Nav brand={meta['brand']} paths={meta['paths']}/>
+            <main>
+                <SwitchBoard trial={meta['trial']}/>
+            </main>
         </div>
     )
 }

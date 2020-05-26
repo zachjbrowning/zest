@@ -1,0 +1,42 @@
+{
+    "trial" : "trial.json",
+    "brand" : {
+        "title" : "ZESTY",
+        "style" : {
+            "color" : "var(--primary)",
+            "fontWeight" : "300"
+        }
+    },
+    "paths" : [
+        {
+            "pathname" : "",
+            "filename" : "home.json",
+            "name" : "Home"
+        },
+        {
+            "pathname" : "documentation",
+            "filename" : "doc/documentation.json",
+            "name"     : "Documentation",
+            "subpaths" : [
+                {
+                    "pathname" : "css-explain",
+                    "filename" : "doc/css.json",
+                    "name"     : "CSS Explain"
+                },
+                {
+                    "pathname" : "json-explain",
+                    "filename" : "doc/json.json",
+                    "name"     : "JSON Explain"
+                },
+                {
+                    "pathname" : "zest-framework",
+                    "filename" : "docs/zest.json",
+                    "name"     : "Zest Framework"
+                }
+
+            ]
+
+        }
+
+    ]
+}
