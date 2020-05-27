@@ -27,3 +27,14 @@
     padding-top:10%;
     padding-bottom:10%;
 }
+.machine-pic {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.machine {
+    width:100%;
+}
+.home-last {
+    padding-bottom:40px;
+}

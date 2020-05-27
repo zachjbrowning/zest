@@ -26,10 +26,13 @@ export default function Home() {
                 <div className="home-text">
                     The starting point of the website is in a file called main.json. In this file is information about the name of the site, the colour scheme, the different pages present in the site, the location of the JSON files for each page, and a bit of other stuff. Zest takes this, and creates the header, footer, and a skeleton of what the website will look like. Then, when you navigate to a certain page on the site, Zest will look up which JSON file corrolates to that page, go fetch it and then render the webpage as per the JSON file.
                 </div>
+                <div className="machine-pic">
+                    <img className="machine" src="/public/machine.png"/>
+                </div>
                 <div className="content-sub-header">
                     Why do this instead of a normal website? (Last question I promise)
                 </div>
-                <div className="home-text">
+                <div className="home-text home-last">
                     The coolest part about Zest is being able to create a website from just a few JSON files. This means that you can get a site up and running literally in a couple of minutes. It does mean the websites that are produced are not that fancy or complicated, but that is not the goal here. The goal is a minimal site with small package sizes that virtually anyone can work on and develop!
                 </div>
 
