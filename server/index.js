@@ -7,7 +7,7 @@ const DIST_DIR = path.join(__dirname, '../dist');
 const APP_ENTRY = path.join(DIST_DIR, 'index.html');
 
 //Setting up static file access
-app.use(express.static(DIST_DIR));
+app.use('/zest', express.static(DIST_DIR));
 
 //Routing, default sends all urls 
 app.get('/*', (req,res) => {

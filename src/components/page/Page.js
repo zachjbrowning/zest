@@ -16,7 +16,8 @@ export default class Page extends Component {
         const options = {
             method: 'GET',
         }
-        fetch('/zestbox/' + this.props.file, options).then(response => response.json()).then(json => this.setState({info: json}))
+        console.log("Fetching", '/zestbox/' + this.props.file )
+        fetch('/zest/zestbox/' + this.props.file, options).then(response => response.json()).then(json => this.setState({info: json}))
         
     }
     render() {

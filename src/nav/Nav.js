@@ -38,7 +38,7 @@ export default class Nav extends Component {
                     <div id="nav-container" className="container">
                         <Link to='/zest' onClick={this.navigate} className="mr-auto navbrand" style={('style' in this.props.brand ? this.props.brand['style'] : {})}>
                             <div className="nav-logo">
-                                <img src={'/public/zest.svg'}/>
+                                <img src={'/zest/public/zest.svg'}/>
                             </div>
                             <span className="nav-title">{('title' in this.props.brand ? this.props.brand['title'] : '')}</span>
                         </Link>
