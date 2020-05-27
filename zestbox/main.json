@@ -14,12 +14,12 @@
     },
     "paths" : [
         {
-            "pathname" : "",
+            "pathname" : "zest",
             "filename" : "home.json",
             "name" : "Home"
         },
         {
-            "pathname" : "documentation",
+            "pathname" : "zest/documentation",
             "name"     : "Documentation",
             "subpaths" : [
                 {

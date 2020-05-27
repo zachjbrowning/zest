@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path'); 
 
 const app = express();
-const port = 3000;
+const port = 5000;
 const DIST_DIR = path.join(__dirname, '../dist');
 const APP_ENTRY = path.join(DIST_DIR, 'index.html');
 

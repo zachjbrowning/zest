@@ -27,12 +27,13 @@ export default function SwitchBoard(props) {
         }
         order.push(key);
     })
+    console.log(mapper);
     return (
         <Switch>
-            <Route exact path='/' component={AsyncHome}/>
+            <Route exact path='/zest' component={AsyncHome}/>
             
             {order.map((path, index) => {
-                if (path === '/') {
+                if (path === '/zest') {
                     return (<Route key={index} exact path={path} render={() => <Page file={mapper[path]}/>}/>)
                 } else {
                     return (<Route key={index} path={path} render={() => <Page file={mapper[path]}/>}/>)

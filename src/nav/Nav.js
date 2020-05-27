@@ -36,7 +36,7 @@ export default class Nav extends Component {
             <header>
                 <nav className="fixed-nav navbar">
                     <div id="nav-container" className="container">
-                        <Link to='/' onClick={this.navigate} className="mr-auto navbrand" style={('style' in this.props.brand ? this.props.brand['style'] : {})}>
+                        <Link to='/zest' onClick={this.navigate} className="mr-auto navbrand" style={('style' in this.props.brand ? this.props.brand['style'] : {})}>
                             <div className="nav-logo">
                                 <img src={'/public/zest.svg'}/>
                             </div>
