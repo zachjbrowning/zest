@@ -25,7 +25,8 @@ export default class Nav extends Component {
             row.style.transitionDuration = '0ms';
             row.style.height = row.scrollHeight + 'px';
             setTimeout(() => {row.style.transitionDuration = null; row.style.height = null}, 10);
-        } else {
+        } else if (window.innerWidth <= 600) {
+            //NEED THIS TO OCCUR ONLY IF WIDE ENOUGH
             row.style.height = row.scrollHeight + 'px';
             setTimeout(() => {row.style.height = '100%'}, 200);
         }
@@ -37,7 +38,7 @@ export default class Nav extends Component {
                     <div id="nav-container" className="container">
                         <Link to='/' onClick={this.navigate} className="mr-auto navbrand" style={('style' in this.props.brand ? this.props.brand['style'] : {})}>
                             <div className="nav-logo">
-                                <img src='/public/zest.svg'/>
+                                <img src={'/public/zest.svg'}/>
                             </div>
                             <span className="nav-title">{('title' in this.props.brand ? this.props.brand['title'] : '')}</span>
                         </Link>

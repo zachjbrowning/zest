@@ -1,0 +1,53 @@
+{
+    "title"     : "Json Explanations",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "first"     : {
+                "img"   : ["jason.jpg", "^^^^ THIS IS JASON NOT JSON ^^^^"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "header-text"    : ["What is json???"],
+            "class"     : "style-1",
+            "first"     : {
+                "text"  : ["JSON is a type of file that stores information that can easily be converted from a file to data in a program, and vice versa.\n\nIt can take a little bit getting used to the syntax, but once understood, it's a very powerful way of storing data.\n\nThe first step to understanding json files it understanding their components."]
+            }
+        },
+        {
+            "layout"    : 2,
+            "header-text"    : ["JSON components"],
+            "class"     : "style-2",
+            "first"     : {
+                "header-text"    : ["Dictionaries"],
+                "text"      : ["Dictionaries are unsurprisingly analogous to a dictionary in a way. Importantly though, it is an unordered dictionary. This means you should never think about dictionary items relative to their order of appearance.\n\nBack to the analogy. Each word in the English dictionary can be called a key. And every single word (or key) in the dictionary has it's accompanying definition, or as we'll call it, it's value. SO, a dictionary is essentially a book with a whole bunch of unordered keys and their corresponding values. We can find the values, by looking up the key."]
+            },
+            "second"    : {
+                "header-text"    : ["Arrays"],
+                "text"      : ["An array is really just a fancy word for a list. This list can be a list of any objects, integers strings, dictionaries, more arrays.... What's important is that this time, there is no key associated with each element. A list is an ORDERED object. Rather than referencing an object based on it's key, like with a dictionary, an object is referenced by its place in the list, or more technically, its INDEX. One important thing to remember with computer scienceynesss is that counting always starts as zero, the first element is the zeroth element. So, the element at index 3, (array[3]) is the FOURTH element, and so on."]
+
+            }
+        },
+        {
+            "layout"    : 2,
+            "header-text"    : ["SYNTAX BABBYYYY"],
+            "class"     : "style-2",
+            "first"     : {
+                "text"  : ["Dictionaries are signified by curly braces. if you see {} - that would be a dictionary. (An empty one, but a dictionary nonetheless.\n\nAs previously mentioned, dictionaries are made up of key - value pairs. In a dictionary, a key MUST be a string, and therefore encased in double quotation marks. The value is then seperated by a colon, like:\n\n\"KEY\" : VALUE\n\nA dictionary is literally just made up of a whole bunch of those, comma seperated. Remeber the value can be any type.\n\n{\n\t\"list\" : [1,2,3],\n\t\"dict\" : {},\n\t\"int\" : 3\n}"]
+            },
+            "second"    : {
+                "text"  : ["Great succes, arrays are much easier syntaxically than dictionaries are. An array is signified with square parentheses - []. That's about it really.\n\nEach element in an array is comma seperated, like a dictionary. JSON arrays are polymorphic, meaning they can contain elements with differing types, but for our purposes, don't try that it'll end badly....\n\nSO pretty much\n[1,2,3,4,5] is an array of ints\n[\"this\", \"is\", \"an array of strings\"]"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text" : ["JSONN, TICKKK!!"],
+            "first"     : {
+                "text"  : ["SO hopefully that's enough to get you on track in regards to JSON. We are going to hopefully by representing each page as a JSON file, that my lil framework will turn into a rovery webpage!\n\nOne more quick note - Remember how both our different types, dictionaries and arrays, are comma seperated? JSON gets very angry then rolls over and dies if you have a comma after the last element (i.e. there are no more elements in the array/dict). So remember not to do this. It is also almost always the error that is causing the webpage not to load."]
+            }
+        }
+    ]
+    
+}

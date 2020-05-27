@@ -1,0 +1,91 @@
+{
+    "title"     : "Css Explanations",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "class"     : "style-3",
+            "first"     : {
+                "img"   : ["css.jpg", "^^^ CSS, but not like, CSS ^^^"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "header-text"    : ["Q: Ok no funny business, what is it actually?"],
+            "class"     : "style-1",
+            "first"     : {
+                "header-text" : ["A: Cascading Style Sheets"],
+                "text"  : ["Cascading style sheets aye?? Bit of a boring name. The crucial part is the middle word. STYLE. CSS is HTML's QUEEEENNNN. Without it, it's just a monochromatic, ugly pile of text. CSS is incredibly powerful and is what is used to style (Duhhh) a website. If you're not careful, using css can make things"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "style"     : {
+                "backgroundColor" : "orange"
+            },
+            "first"     : {
+                "style" : {
+                    "backgroundColor" : "purple",
+                    "fontFamily"      : "'Architects Daughter', cursive",
+                    "fontSize"        : "30px",
+                    "display"     : "flex",
+                    "justifyContent"   : "center",
+                    "alignItems"   : "center",
+                    "color"         : "red",
+                    "width"     :"100%",
+                    "border" : "solid 4px lightseagreen"
+                },
+                "text"  : ["REALLY UGLY"]
+            }
+        },
+        {
+            "layout"    :1,
+            "first" : {
+                "text":["But, don't fret. We're going to use it to make things lovely and beautiful."]
+            }
+        },
+        {
+            "layout"    :1,
+            "class"     : "style-3",
+            "style"     : {
+                "paddingBottom"    : "20px"
+            },
+            "header-text"    : ["Operation: BOOTIFUL"],
+            "first" : {
+                "text"  : ["OK. where to start. essentially, every object in HTML is wrapped in tags. div tags create different sections, and there are a whole bunch of others but lets stick to just this for now. We can give these divisions some style. We can do this manually, or we can give divs a 'class', which is essentially a way to abstract the styling. In a css file, we can then allocate different styling to different classes.\n\nIf you're interested, you can check out the styling of a website by inspecting it. CMD + SHIFT + I will pull it up. Press the little cursor icon on the far left and you can hover over different divs to see their style.\n\nThe div that this text is written in doesn't really have much styling associated with it, except what's been inherited from parent divs. But, you might notice that the header for this little paragraph has a bit. We've made the font a bit bigger and bolder, and changed the color of the font. Some of this was done automatically by the framework I've set up, but some of it was added using the JSON file that makes up this page! (If you really want to, you can completely override and change all the styling that I've set up, but let's not get too excited just yet)"]
+            }
+        }, {
+            "layout"    : 1,
+            "class"     : "style-3",
+            "header-text"    : ["Great. A whole bunch of words. But what does that mean for me?"],
+            "first" : {
+                "text"  : ["WELLL. Before we get there, I have a very important little note. Unfortunately, one of the downsides of React is that is uses a slightly different syntax for CSS than just plain CSS (I know, who the heck decided that was a good idea...). For below, I'll give you the proper version and the React version in brackets. It's really just removing the hyphens and using caps to distniguish new words.\n\nYou are more than welcome to play around and go ham on the css (if you're ever stuck, google css w3schools and whatever style you're trying to add. It's a great site). BUT I reckon these are the only ones you'll need to worry about:"]
+            }
+        },
+        {
+            "layout"    : 2,
+            "second"     : {
+                "text"  : ["<z>padding"," (padding) : This is a bit of a more complex one but might be useful. This is just because I've removed any padding from most of the divs so you might want to add some back. Padding just gives a bit of space between objects. (But keeps the same background color). There is padding for above, below, left and right of a div, and I'd say it's probably easiest just to deal with them individually. They can accept different formats, but lets just stick to pixel units. If you wanted a bit of space vertically, you might do\n\n \"padding-top\" (paddingTop) : \"10px as well as\n\"padding-bottom\" (paddingBottom) : \"10px\". \nIf you wanted things inset a little, you might do\n\n \"padding-left\" (paddingLeft) : \"10px as well as\n\"padding-right\" (paddingRight) : \"10px\". It's definitely a good idea to keep things symetrical."]
+            },
+            "first"    : {
+                "text"  : ["<z>color", " (color) : Determines the foreground (text) colour. You can give it a plaintext word, like white or black, or a hex number (e.g. #abc123) or an rgb value (e.g. rgb(1,2,3) OR a variable. I've predefined a few that might be useful, that I'll talk about later. But they get used by var(--purple).\n\n", "<z>background-color", " (backgroundColor) : Determines the background colour. Pretty much exactly the same as color, just works for the backdrop not the text."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-3",
+            "header-text"    : ["Escape characters - an interlude"],
+            "first" : {
+                "text" : ["Before we really get going, one thing to know is that whitespace (spaces, newlines, etc.) doesn't go very well with HTML. So, instead of just pressing enter to signify a new line, we're going to use a special thing called an escape character. Escape characters start with a backslash - \\. (I actually had to use an escape character to write that backslash - because it itself is the start of an escape character!). We'll just worry about two - newline and tab. To do the equivalent of pressing enter, use \\n. To do a tab, use \\t.\n\nThat's about it for this little interlude!"]
+            }
+        },
+        {
+            "layout"    : 1,
+            
+            "header-text"    : ["Next steps"],
+            "first" : {
+                "text"  : ["Where to from here? Hopefully you'll have a bit of understanding as to how CSS works now. Don't worry about memorising the three examples I gave you above, you'll get the hang of it once you start putting in content a bit more.\n\nNext up: The Fun Stuff (TM) - documentation on how to use JSON + CSS together to magically create some pages for the website!!\n\n"]
+            }
+        }
+
+    ]
+}

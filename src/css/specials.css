@@ -1,0 +1,29 @@
+.glossary {
+    white-space: pre-wrap;
+}
+.glossary-link:hover {
+    cursor: pointer;
+    background-color:var(--secondary);
+}
+.home-holder, .home-holder > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.home-holder > div, .home-description > div {
+    flex-basis: 100%;
+    flex-grow:1;
+}
+.home-description .content-sub-header {
+    padding-top:40px;
+    justify-content:start !important;
+    color:var(--primary);
+}
+.home-title {
+    color:var(--primary);
+    font-weight:600;
+    font-size:3rem;
+    padding-top:10%;
+    padding-bottom:10%;
+}

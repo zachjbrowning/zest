@@ -1,0 +1,80 @@
+{
+    "title"     : "The Zest Framework",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text"    : ["Prelude"],
+            "first"     : {
+                "text"  : ["The idea behind the Zest framework is that a JSON file gets converted to a webpage. For that JSON file to work with the framework, it has to follow the rules set out below. Ultimately, the file is just made up of a combination of dictionaries, arrays, strings and integers, but a number of objects have been defined to help describe what you can and can't include in the file.\n\nHappy building!\n\n"]
+            }
+        },
+        {
+            "layout"    : -1,
+            "class"     : "style-2",
+            "header-text"    : ["Glossary"],
+            "metadata"  : {
+                "glossary"  : [["<json object>", "json"],["<section object>","section"],["<block object>","block"],["<style object>","style"],["<img object>","img"],["<text object>","text"]]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text"    : ["Object library"]
+        },
+        {
+            "layout"    : 1,
+            "id"        : "json",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"    : ["<i><json object>"],
+                "text"      : ["<b>Type:", " <dictionary>\n", "<b>Description:"," The whole thing! This is the main dictionary that fills the JSON file and is passed in to create the page.\n","<b>Children:","\n\ttitle : <string>\n\tsections : [<section object>]\n\tclass : <string>\n\tstyle : <style object>\n\tid : <string>"]
+            }
+        },
+        {
+            "layout" : 1,
+            "id"     : "section",
+            "class"  : "style-1",
+            "first"  : {
+                "header-text"    : ["<i><section object>"],
+                "text"      : ["<b>Type:"," <dictionary>\n","<b>Description:"," Dictionary that defines each section on a page. Often distinguished by having a different background colour to surrounding sections. Commonly has one or two columns of images or text.\n","<b>Children:","\n\tlayout : <int>","<i>Note - 1 refers to a one column section, 2 refers to a two column section. Can also be used to trigger custom sections.","\n\tclass : <string>\n\tid : <string>\n\tstyle : <style object>\n\tfirst : <block object>\n\tsecond : <block object>","<i> Note - second is only used in layout 2","\n\theader-text : <text object>\n\theader-style : <style object>\n\tcontainer-style : <style object>"]
+            }
+        },
+        {
+            "layout" : 1,
+            "id"     : "block",
+            "class"  : "style-1",
+            "first"  : {
+                "header-text"    : ["<i><block object>"],
+                "text"      : ["<b>Type:"," <dictionary>\n","<b>Description:"," The building block of Zest. A header and a block of text (text can be swapped out for an image using the img child)\n","<b>Children:","\n\theader-text : <text object>\n\theader-style : <style object>\n\tclass : <string>\n\tstyle : <style object>\n\ttext : <text object>\n\timg : <img object>"]
+            }
+        },
+        {
+            "layout" : 1,
+            "id"     : "style",
+            "class"  : "style-1",
+            "first"  : {
+                "header-text"    : ["<i><style object>"],
+                "text"      : ["<b>Type:"," <dictionary>\n","<b>Description:"," Zest's way of injecting CSS from a JSON file! here you can inject any compatible CSS you like and it will be applied inline to the relevant element.\n","<b>Children:"," Any CSS you can think of. Use React CSS syntax to avoid any problems."]
+            }
+        },
+        {
+            "layout" : 1,
+            "id"     : "img",
+            "class"  : "style-1",
+            "first"  : {
+                "header-text"    : ["<i><img object>"],
+                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," Used within a block object to display an image. To do so, the image is placed in the public folder. The first element of the array is then the relative path from the public folder to the img. If for example, img.jpg was placed in public/resources/img.jpg, the first element of the array would be \"resources/img.jpg\". The second element of the array is the caption of the image, if required.\n","<b>Element type:"," <string>"]
+            }
+        },
+        {
+            "layout" : 1,
+            "id"     : "text",
+            "class"  : "style-1",
+            "first"  : {
+                "header-text"    : ["<i><text object>"],
+                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," How almost all text is passed around in Zest! The text object is an array of strings. In practice, each element of the array is concatenated together to form a single long string. An array with multiple strings (rather than one long string) is used to enable the capacity for inline special text such as bold and italics. A string element starting with <> can be given special properties.\n","<b>Element type:"," <string>\n","<b>Options:","\n\t<b> : Makes the ensuing string bold\n\t<i> : Makes the ensuing string italic\n\t<z> : Makes the ensuing string italic and bold"]
+            }
+        }
+    ]
+}

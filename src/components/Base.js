@@ -1,15 +1,17 @@
 import React from 'react'
 import Nav from '../nav/Nav'
+import Footer from '../footer/Footer'
 import SwitchBoard from './SwitchBoard'
-const meta = require('../content/main.json')
+const meta = require('../../zestbox/main.json')
 
 export default function Base() {
     return (
-        <div className="base-frame">
+        <div>
             <Nav brand={meta['brand']} paths={meta['paths']}/>
             <main>
-                <SwitchBoard trial={meta['trial']}/>
+                <SwitchBoard paths={meta['paths']}/>
             </main>
+            <Footer footer={meta['footer']}/>
         </div>
     )
 }

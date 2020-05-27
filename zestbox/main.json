@@ -1,11 +1,16 @@
 {
-    "trial" : "trial.json",
     "brand" : {
-        "title" : "ZESTY",
+        "title" : "ZEST",
+        "img"   : "zest.zvg",
         "style" : {
             "color" : "var(--primary)",
-            "fontWeight" : "300"
+            "fontWeight" : "200"
         }
+    },
+    "footer" : {
+        "facebook" : "nah",
+        "instagram" : "yeah",
+        "note" : ["Another website by ", "<a=https://www.zachjbrowning.tech>zachjbrowning"]
     },
     "paths" : [
         {
@@ -15,7 +20,6 @@
         },
         {
             "pathname" : "documentation",
-            "filename" : "doc/documentation.json",
             "name"     : "Documentation",
             "subpaths" : [
                 {
@@ -30,7 +34,7 @@
                 },
                 {
                     "pathname" : "zest-framework",
-                    "filename" : "docs/zest.json",
+                    "filename" : "doc/zest.json",
                     "name"     : "Zest Framework"
                 }
 

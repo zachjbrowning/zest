@@ -1,0 +1,26 @@
+.loadframe {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+.load-box {
+    display:flex;
+    width:100px;
+    height:100px;
+    animation: glow 1s infinite linear;
+}
+
+
+@keyframes glow {
+    0% {
+        padding-bottom:0px;
+    }
+    50% {
+        padding-bottom:40px;
+    }
+    100% {
+        padding-bottom:0px;
+    }
+}

@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700');
 @import './rules.css';
 :root {
     --primary:#d48301;
+    --primary-fade:#d48301cc;
     --secondary:#e6b120;
+    --secondary-fade:#e6b120cc;
     --text:black;
     --tertiary:#80a521;
+    --tertiary-fade:#80a521cc;
     --quaternary:#7a7932;
     --backdrop:white;
+    --backdrop-fade:#ffffffdd;
 }
 html {
     -webkit-text-size-adjust: 100%;
@@ -14,10 +18,17 @@ html {
 html, body, #root {
     font-family: 'Montserrat', sans-serif;
     height:100%;
+    margin:0;
     background-color:var(--backdrop);
 }
 main {
     padding-top:70px;
+    min-height:80vh;
 }
-
+.parsed-link {
+    opacity: 60%;
+}
+.parsed-link:hover {
+    opacity:100%;
+}
 
