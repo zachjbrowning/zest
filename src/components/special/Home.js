@@ -12,7 +12,7 @@ export default function Home() {
                     What is Zest?
                 </div>
                 <div className="home-text">
-                    Good question. Well, it's a framework designed at creating minimalist websites from JSON files. 
+                    Good question. Well, it's a framework designed for creating minimalist websites from JSON files. 
                 </div>
                 <div className="content-sub-header">
                     What on earth does that even mean?
@@ -33,7 +33,7 @@ export default function Home() {
                     Why do this instead of a normal website? (Last question I promise)
                 </div>
                 <div className="home-text home-last">
-                    The coolest part about Zest is being able to create a website from just a few JSON files. This means that you can get a site up and running literally in a couple of minutes. It does mean the websites that are produced are not that fancy or complicated, but that is not the goal here. The goal is a minimal site with small package sizes that virtually anyone can work on and develop!
+                    The coolest part about Zest is being able to create a website from just a few JSON files. This means that you can get a site up and running literally in a couple of minutes. It does mean the websites that are produced are not that fancy or complicated, but that is not the goal here. The goal is a minimal site with small packet sizes that virtually anyone can work on and develop!
                 </div>
 
             </div>

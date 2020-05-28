@@ -27,7 +27,6 @@ export default function SwitchBoard(props) {
         }
         order.push(key);
     })
-    console.log(mapper);
     return (
         <Switch>
             <Route exact path='/zest' component={AsyncHome}/>

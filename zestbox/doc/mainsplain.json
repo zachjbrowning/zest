@@ -1,0 +1,71 @@
+{
+    "title" : "Main.json : entry point",
+    "sections" : [
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text" : ["Prelude"],
+            "first"     : {
+                "text"  : ["The website needs an entry point! This is found in main.json. The entry point dictates the colour scheme and general feel of the website, along with all the different subpages of the site and where their respective json files are located. The rules set out below dictate how to align your main.json to work with Zest. Ultimately, the file is just made up of a combination of dictionaries, arrays, strings and integers, but a number of objects have been defined to help describe what you can and can't include in the file.\n\nHappy building!\n\n"]
+            }
+        }, 
+        {
+            "layout"    : -1,
+            "class"     : "style-2",
+            "header-text"   : ["Glossary"],
+            "metadata"      : {
+                "glossary"  : [["<json object>", "json"],["<brand object>", "brand"],["<footer object>","footer"],["<path object>","path"],["<color object>","color"]]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text"    : ["Object library"]
+        },
+        {
+            "layout"    : 1,
+            "id"        : "json",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"   : ["<i><json object>"],
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," The dictionary that fills the JSON file! It's contents are what is used to create the skeleton of the website.\n","<b>Children:","\n\tbrand : <brand object>\n\tfooter : <footer object>\n\tpaths : [<path object>]\n\tcolors : <color object>"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "brand",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"   : ["<i><brand object>"],
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary holds all the information about the branding at the top of the navbar.\n","<b>Children:","\n\ttitle : <string>\n\timg : <string>\n\tstyle : <style object> - see pages documentation"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "footer",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"   : ["<i><footer object>"],
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary holds all the information about the footer which sits at the bottom of the page.\n","<b>Children:","\n\tfacebook : <url>\n\tinstagram : <url>\n\tnote : <text object> - see pages documentation"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "path",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"   : ["<i><path object>"],
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary is used to build the skeleton of the site. It holds information as to the pages and the location of their json files. Please note that different to static files, the relative pathname for a json file starts from the zestbox folder. An array of these items makes up the 'paths' element in the main JSON object.\n","<b>Children:","\n\tpathname : <string> - used for the url\n\tfilename : <string> - not used if item is a header for a dropdown\n\tname : <string>\n\tsubpaths : [<path object>] - currently only valid for paths that themselves are not subpaths. (no nested subpaths)"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "color",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"   : ["<i><color object>"],
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary holds the colour scheme to be used in the site. Each value should be a string that is a hex colour - a full six characters, for example white = #ffffff.\n","<b>Children:","\n\tprimary : <string>\n\tsecondary : <string>\n\ttertiary : <string>\n\tquaternary : <string>\n\tbackdrop : <string>"]
+            }
+        }
+    ]
+}

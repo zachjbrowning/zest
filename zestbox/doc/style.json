@@ -1,0 +1,73 @@
+{
+    "title"     : "Styling with Zest",
+    "sections"  : [
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text"    : ["Prelude"],
+            "first"     : {
+                "text"  : ["In addition to adding css styling as objects in json files, Zest also comes out of the box with a number of different classes that you can use to work even faster. These are mainly aimed at quickly producing different colour variations based on the colour scheme set out in main.json, as well as streamlining styling additions that would be used often. Each different entry in this section is a class that can be used. Unless specified, they are intended to be used with a section object. To use multiple classes in one instance, space seperate them in the single class string, like \"classA classB\".\n\nNote that any class based styling is overridden by anything specified in styling objects."]
+            }
+        },
+        {
+            "layout"    : -1,
+            "class"     : "style-2 top-hat bottom-hat",
+            "header-text"    : ["Glossary"],
+            "metadata"  : {
+                "glossary"  : [["style-1","style1"],["style-2","style2"],["style-3","style3"],["top-hat","tophat"],["bottom-hat","bottomhat"]]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text"    : ["Class library"]
+        },
+        {
+            "layout"    : 1,
+            "id"        : "style1",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"      : ["<i>style-1"],
+                "text"              : ["This class is the base colour scheme. Same background colour as the general site, headers in primary colour and subheader in secondary colour. This section itself is made using style-1!"]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "style2",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"      : ["<i>style-2"],
+                "text"              : ["This class is the complementary colour scheme to style-1. It uses the secondary colour as the backdrop and white for the text. This is the style that was used to create the glossary on this page."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "style3",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"      : ["<i>style-3"],
+                "text"              : ["This class uses the tertiary colour as the backdrop, with white text. It is similar to the colour scheme of the footer."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "tophat",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"      : ["<i>top-hat"],
+                "text"              : ["This class can be used to pad out the top of a section. It is generally used when a background colour change occurs. It is not automatically added to sections because often sequential sections in the json file can be used to create a bigger more complex section on the webpage."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "id"        : "bottomhat",
+            "class"     : "style-1",
+            "first"     : {
+                "header-text"      : ["<i>bottom-hat"],
+                "text"              : ["This class is the complement of the top hat class. It pads out the bottom of a section."]
+            }
+        }
+    ]
+
+    
+}

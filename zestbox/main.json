@@ -12,6 +12,13 @@
         "instagram" : "yeah",
         "note" : ["Another website by ", "<a=https://www.zachjbrowning.tech>zachjbrowning"]
     },
+    "colors" : {
+        "primary"   : "#d48301",
+        "secondary" : "#e6b120",
+        "tertiary"  : "#80a521",
+        "quaternary" : "#7a7932",
+        "backdrop"  : "#ffffff"
+    },
     "paths" : [
         {
             "pathname" : "zest",
@@ -33,9 +40,19 @@
                     "name"     : "JSON Explain"
                 },
                 {
-                    "pathname" : "zest-framework",
+                    "pathname" : "main-framework",
+                    "filename" : "doc/mainsplain.json",
+                    "name"     : "Zest main.json"
+                },
+                {
+                    "pathname" : "pages-framework",
                     "filename" : "doc/zest.json",
-                    "name"     : "Zest Framework"
+                    "name"     : "Zest pages.json"
+                },
+                {
+                    "pathname" : "style-framework",
+                    "filename" : "doc/style.json",
+                    "name"     : "Zest styling"
                 }
 
             ]

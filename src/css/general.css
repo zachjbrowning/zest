@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700');
 @import './rules.css';
-:root {
-    --primary:#d48301;
-    --primary-fade:#d48301cc;
-    --secondary:#e6b120;
-    --secondary-fade:#e6b120cc;
-    --text:black;
-    --tertiary:#80a521;
-    --tertiary-fade:#80a521cc;
-    --quaternary:#7a7932;
-    --backdrop:white;
-    --backdrop-fade:#ffffffdd;
-}
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -31,4 +19,9 @@ main {
 .parsed-link:hover {
     opacity:100%;
 }
-
+.top-hat {
+    padding-top:20px;
+}
+.bottom-hat {
+    padding-bottom:20px;
+}

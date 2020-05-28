@@ -82,7 +82,7 @@ nav {
 .active {
     color:var(--primary);
 }
-.active:hover, .nav-item:hover {
+.nav-link:hover {
     color:var(--secondary);
     font-size:20.5px;
 }

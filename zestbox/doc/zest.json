@@ -1,17 +1,17 @@
 {
-    "title"     : "The Zest Framework",
+    "title"     : "Page.json - where the action happens",
     "sections"  : [
         {
             "layout"    : 1,
             "class"     : "style-1",
             "header-text"    : ["Prelude"],
             "first"     : {
-                "text"  : ["The idea behind the Zest framework is that a JSON file gets converted to a webpage. For that JSON file to work with the framework, it has to follow the rules set out below. Ultimately, the file is just made up of a combination of dictionaries, arrays, strings and integers, but a number of objects have been defined to help describe what you can and can't include in the file.\n\nHappy building!\n\n"]
+                "text"  : ["Each subpage of a site is represented by it's own json file. This 'page.json' needs to align with the ZEST formatting for it to properly work. The rules set out below dictate how to align your json file with Zest. Ultimately, the file is just made up of a combination of dictionaries, arrays, strings and integers, but a number of objects have been defined to help describe what you can and can't include in the file.\n\nHappy building!\n\n"]
             }
         },
         {
             "layout"    : -1,
-            "class"     : "style-2",
+            "class"     : "style-2 top-hat bottom-hat",
             "header-text"    : ["Glossary"],
             "metadata"  : {
                 "glossary"  : [["<json object>", "json"],["<section object>","section"],["<block object>","block"],["<style object>","style"],["<img object>","img"],["<text object>","text"]]
@@ -28,7 +28,7 @@
             "class"     : "style-1",
             "first"     : {
                 "header-text"    : ["<i><json object>"],
-                "text"      : ["<b>Type:", " <dictionary>\n", "<b>Description:"," The whole thing! This is the main dictionary that fills the JSON file and is passed in to create the page.\n","<b>Children:","\n\ttitle : <string>\n\tsections : [<section object>]\n\tclass : <string>\n\tstyle : <style object>\n\tid : <string>"]
+                "text"      : ["<b>Type:", " <dictionary>\n", "<b>Description:"," The whole thing! This is the main dictionary that fills the JSON file and is passed in to create the page. NOTE - This JSON object is different to the one in main.json as it has different plausible children.\n","<b>Children:","\n\ttitle : <string>\n\tsections : [<section object>]\n\tclass : <string>\n\tstyle : <style object>\n\tid : <string>"]
             }
         },
         {
@@ -73,7 +73,7 @@
             "class"  : "style-1",
             "first"  : {
                 "header-text"    : ["<i><text object>"],
-                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," How almost all text is passed around in Zest! The text object is an array of strings. In practice, each element of the array is concatenated together to form a single long string. An array with multiple strings (rather than one long string) is used to enable the capacity for inline special text such as bold and italics. A string element starting with <> can be given special properties.\n","<b>Element type:"," <string>\n","<b>Options:","\n\t<b> : Makes the ensuing string bold\n\t<i> : Makes the ensuing string italic\n\t<z> : Makes the ensuing string italic and bold"]
+                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," How almost all text is passed around in Zest! The text object is an array of strings. In practice, each element of the array is concatenated together to form a single long string. An array with multiple strings (rather than one long string) is used to enable the capacity for inline special text such as bold and italics. A string element starting with <> can be given special properties.\n","<b>Element type:"," <string>\n","<b>Options:","\n\t<b> : Makes the ensuing string bold\n\t<i> : Makes the ensuing string italic\n\t<z> : Makes the ensuing string italic and bold\n\t<a=__URL__> : Creates a link from that text to __URL__"]
             }
         }
     ]
