@@ -79,8 +79,8 @@
         },
         {
             "layout"    : 1,
-            
-            "header-text"    : ["Next steps top-hat bottom-hat"],
+            "class" : "style-1 top-hat bottom-hat",
+            "header-text"    : ["Next steps"],
             "first" : {
                 "text"  : ["Where to from here? Hopefully you'll have a bit of understanding as to how CSS works now. Don't worry about memorising the three examples I gave you above, you'll get the hang of it once you start putting in content a bit more.\n\nNext up: The Fun Stuff (TM) - documentation on how to use JSON + CSS together to magically create some pages for the website!!\n\n"]
             }

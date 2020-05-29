@@ -29,6 +29,7 @@ export default function SwitchBoard(props) {
     })
     return (
         <Switch>
+            
             <Route exact path='/zest' component={AsyncHome}/>
             
             {order.map((path, index) => {

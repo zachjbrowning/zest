@@ -1,0 +1,55 @@
+{
+    "title" : "Rind : Custom Dev",
+    "sections" : [
+        {
+            "layout"    : 1,
+            "class"     : "style-1",
+            "header-text" : ["Prelude"],
+            "first"     : {
+                "text"  : ["If you're more comfortable developing with React, Zest shouldn't stop you from flexing your skills! Often you may also want to include some more complex functionality than what is offered in the base framework. This might be to create a landing page, or to add some more functionality like a contact form. There are two options to go about this - one is to develop on a page basis. This means creating a component that will fill a whole page, like a landing page. The other option is to develop your own section components. A good example is the glossary section that is used in the documentation of this website. You can then use those custom sections by specifying a layout number in your JSON file.\n\nAll custom development should take place in the 'rind' folder. This plugs straight in to Zest framework for you. Any extra css styling should be imported into rind/rind.css."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1 top-hat bottom-hat",
+            "header-text" : ["Page Development"]
+        },
+        {
+            "layout" : 1,
+            "class" : "style-1",
+            "first" : {
+                "header-text" : ["Development"],
+                "text" : ["Page development should occur in rind/page-rind. You are free to use any functionality you wish, including any Zest components. The Zest components can be found in the src folder.\n\nRemember to import any extra css files you write in rind.css!"]
+            }
+        },
+        {
+            "layout" : 1,
+            "class" : "style-1",
+            "first" : {
+                "header-text" : ["Plugging in"],
+                "text" : ["Custom pages are plugged in to Zest using exact paths. This means that Zest checks the pathname of a url with any custom pages you have plugged in before it starts doing it's own rendering. In as much, any custom pages plugged in will always override any JSON files associated with that path (You are still free to use the JSON functionality though!).\n\nTo plug in a page, got to rind/PageSwitchboard.js. Here you can include a Route for your custom page. Please make sure that you use an exact path, to ensure that no subpages are lost."]
+            }
+        },
+        {
+            "layout"    : 1,
+            "class"     : "style-1 top-hat bottom-hat",
+            "header-text" : ["Section Development"]
+        },
+        {
+            "layout" : 1,
+            "class" : "style-1",
+            "first" : {
+                "header-text" : ["Development"],
+                "text" : ["Section development should occur in rind/section-rind. Just like with page development, you are free to build however you wish. You will need to keep in mind however that your custom section will only be passed in the dictionary associated with that section from the JSON file. This will impact the flexibility you have around things you can do.\n\nAgain, please import any added css to rind.css!"]
+            }
+        },
+        {
+            "layout" : 1,
+            "class" : "style-1",
+            "first" : {
+                "header-text" : ["Plugging in"],
+                "text" : ["Custom sections are plugged in to Zest using a unique layout id. It is convention for custom sections to have negative id's. It is this id that is then used in the layout element of a section object to indicate your use of the custom section. Similar to page development, custom layouts take precedence over any other implied layout.\n\nTo plug in a section, go to rind/SectionSwitchboard.js. You can import your custom section and then add an if statement to catch an instance of your layout, and return your component on success. An example is provided with the Glossary custom section."]
+            }
+        }
+    ]
+}

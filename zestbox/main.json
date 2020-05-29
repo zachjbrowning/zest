@@ -8,8 +8,6 @@
         }
     },
     "footer" : {
-        "facebook" : "nah",
-        "instagram" : "yeah",
         "note" : ["Another website by ", "<a=https://www.zachjbrowning.tech>zachjbrowning"]
     },
     "colors" : {
@@ -53,6 +51,11 @@
                     "pathname" : "style-framework",
                     "filename" : "doc/style.json",
                     "name"     : "Zest styling"
+                },
+                {
+                    "pathname" : "custom-dev",
+                    "filename" : "doc/rind.json",
+                    "name"     : "Custom Dev"
                 }
 
             ]
