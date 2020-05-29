@@ -13,7 +13,10 @@
             "layout"    : -1,
             "class"     : "style-2",
             "header-text"   : ["Glossary"],
-            "glossary"      : [["<json object>", "json"],["<brand object>", "brand"],["<footer object>","footer"],["<path object>","path"],["<color object>","color"]]
+            "metadata" : {
+                "glossary"   : [["<json object>", "json"],["<brand object>", "brand"],["<footer object>","footer"],["<path object>","path"],["<color object>","color"]]
+            }
+
         },
         {
             "layout"    : 1,
