@@ -71,7 +71,7 @@
             "class"  : "style-1",
             "first"  : {
                 "header-text"    : ["<i><text object>"],
-                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," How almost all text is passed around in Zest! The text object is an array of strings. In practice, each element of the array is concatenated together to form a single long string. An array with multiple strings (rather than one long string) is used to enable the capacity for inline special text such as bold and italics. A string element starting with <> can be given special properties.\n","<b>Element type:"," <string>\n","<b>Options:","\n\t<b> : Makes the ensuing string bold\n\t<i> : Makes the ensuing string italic\n\t<z> : Makes the ensuing string italic and bold\n\t<a=__URL__> : Creates a link from that text to __URL__"]
+                "text"      : ["<b>Type:"," <array>\n","<b>Description:"," How almost all text is passed around in Zest! The text object is an array of strings. In practice, each element of the array is concatenated together to form a single long string. An array with multiple strings (rather than one long string) is used to enable the capacity for inline special text such as bold and italics. A string element starting with <> can be given special properties. You may nest these starters to add multiple properties.\n","<b>Element type:"," <string>\n","<b>Options:","\n\t<b> : Makes the ensuing string bold\n\t<i> : Makes the ensuing string italic\n\t<a=__URL__> : Creates a link from that text to __URL__\n\t<c=__HEX_COLOR__> : colours the text with the specified colour."]
             }
         }
     ]

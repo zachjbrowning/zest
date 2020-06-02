@@ -54,7 +54,7 @@
             "class"     : "style-1",
             "first"     : {
                 "header-text"   : ["<i><path object>"],
-                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary is used to build the skeleton of the site. It holds information as to the pages and the location of their json files. Please note that different to static files, the relative pathname for a json file starts from the zestbox folder. An array of these items makes up the 'paths' element in the main JSON object.\n","<b>Children:","\n\tpathname : <string> - used for the url\n\tfilename : <string> - not used if item is a header for a dropdown\n\tname : <string>\n\tsubpaths : [<path object>] - currently only valid for paths that themselves are not subpaths. (no nested subpaths)"]
+                "text"          : ["<b>Type:"," <dictionary>\n","<b>Description:"," This dictionary is used to build the skeleton of the site. It holds information as to the pages and the location of their json files. Please note that different to static files, the relative pathname for a json file starts from the zestbox folder. An array of these items makes up the 'paths' element in the main JSON object.\n","<b>Children:","\n\tpathname : <string> - used for the url\n\tfilename : <string> - not used if item is a header for a dropdown\n\tname : <string>\n\tsubpaths : [<path object>] - note Zest only supports doubly nested paths - i.e. path -> subpath -> subpath."]
             }
         },
         {
