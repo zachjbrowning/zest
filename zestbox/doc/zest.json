@@ -13,9 +13,7 @@
             "layout"    : -1,
             "class"     : "style-2 top-hat bottom-hat",
             "header-text"    : ["Glossary"],
-            "metadata"  : {
-                "glossary"  : [["<json object>", "json"],["<section object>","section"],["<block object>","block"],["<style object>","style"],["<img object>","img"],["<text object>","text"]]
-            }
+            "glossary"  : [["<json object>", "json"],["<section object>","section"],["<block object>","block"],["<style object>","style"],["<img object>","img"],["<text object>","text"]]
         },
         {
             "layout"    : 1,

@@ -2,9 +2,11 @@ import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Page from './page/Page'
 import Loadable from 'react-loadable'
+import PageSwitchboard from '../../rind/PageSwitchboard'
+import '../../rind/rind.css'
 
 const AsyncHome = Loadable({
-    loader: () => import('./special/Home'),
+    loader: () => import('../../rind/page-rind/Home'),
     loading() {
         return <div>Loading...</div>
     }
@@ -27,9 +29,12 @@ export default function SwitchBoard(props) {
         }
         order.push(key);
     })
+
+    let page_rind = PageSwitchboard();
+
     return (
         <Switch>
-            
+            {page_rind}
             <Route exact path='/zest' component={AsyncHome}/>
             
             {order.map((path, index) => {

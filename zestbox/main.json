@@ -60,6 +60,10 @@
 
             ]
 
+        },
+        {
+            "pathname" : "zest/page-builder",
+            "name" : "Page Builder"
         }
 
     ]

@@ -1,22 +1,22 @@
 import React from 'react'
 
 ///CHANGE TO LAZY LOAD
-import Layout_1 from './layout/Layout_1';
-import Layout_2 from './layout/Layout_2';
-import Special from './layout/Special'
+import Layout from './Layout'
+import SectionSwitchboard from '../../../rind/SectionSwitchboard'
 
 
 export default function Section(props) {
-
-    
-    if (props.section['layout'] == 1) {
-        return <Layout_1 section={props.section}/>
-    } else if (props.section['layout'] == 2) {
-        return <Layout_2 section={props.section}/>
-    } else if (props.section['layout'] < 0) { 
-        return <Special section={props.section}/>
+    let section_rind = SectionSwitchboard(props.section)
+    let layout;
+    if ('layout' in props.section) {
+        layout = props.section['layout']
+    }
+    if (section_rind) {
+        return section_rind
+    } else if (props.section != {}) {
+        return <Layout section={props.section} layout={layout}/>
     } else {
-        return <div className="content-frame">BRUHHH</div>
+        return null
     }
     
 }

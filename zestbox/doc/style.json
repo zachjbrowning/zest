@@ -13,9 +13,7 @@
             "layout"    : -1,
             "class"     : "style-2 top-hat bottom-hat",
             "header-text"    : ["Glossary"],
-            "metadata"  : {
-                "glossary"  : [["style-1","style1"],["style-2","style2"],["style-3","style3"],["top-hat","tophat"],["bottom-hat","bottomhat"]]
-            }
+            "glossary"  : [["style-1","style1"],["style-2","style2"],["style-3","style3"],["top-hat","tophat"],["bottom-hat","bottomhat"]]
         },
         {
             "layout"    : 1,

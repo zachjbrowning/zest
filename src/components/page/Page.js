@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Section from './Section'
 import Header from './Header'
-import Loader from '../Loader'
 import '../../css/blocks.css'
 import '../../css/specials.css'
 
